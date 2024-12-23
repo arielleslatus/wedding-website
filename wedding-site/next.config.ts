@@ -7,6 +7,10 @@ const withVanillaExtract = createVanillaExtractPlugin();
 
 
 const nextConfig: NextConfig = {
+    images: {
+        disableStaticImages: true,
+        formats: ["image/avif"],
+      },
       webpack: (config) => {
         config.module.rules.push({
             test: /\.(png|jpe?g|gif|svg)$/i,
