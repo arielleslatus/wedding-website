@@ -1,17 +1,19 @@
 'use client'
-import React from "react";
-import { container, imageHolder, imageStyle } from "./index.css"
-import saveTheDate from "/public/assets/saveTheDate.png"
-
+import React, { ReactNode } from "react";
+import { childrenHolder, container } from "./index.css"
 import { Navbar } from "../../components/Navbar";
 
-export const Page: React.FC = () => {
+interface PageProps {
+    children: ReactNode;
+}
+
+export const Page: React.FC<PageProps> = ({children}) => {
 
     return (
         <div className={container}>
            <Navbar/>
-           <div className={imageHolder}>
-           <img src={saveTheDate} className={imageStyle}/>
+           <div className={childrenHolder}>
+           {children}
            </div>
         </div>
     )

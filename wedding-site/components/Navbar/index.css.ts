@@ -56,7 +56,7 @@ export const navBarContent = style({
 }})
 
 export const navItemBase = style({
-        fontFamily: 'avenir next',
+    fontFamily: 'avenir next',
     fontSize: '1.25rem',
     fontWeight: 400,
     cursor: 'pointer',
@@ -68,23 +68,25 @@ export const navItemBase = style({
 })
 
 export const navBarItem = style([navItemBase, {
-    color: '#FFFFFF',
+    color: '#fbefea',
 }])
 
 export const navDrawerItem = style([navItemBase, {
-    color: '#000000',
+    color: '#350303',
 }])
 
 export const menuDrawerBase = style({
-        display: "flex",
+    display: "flex",
     flexDirection: "column",
-        padding: "24px",
-    gap: "8px",
+    padding: "24px",
+    gap: "18px",
     position: 'fixed',
     backgroundColor: 'white',
     top: '60px',
     width: '200px',
-    borderBottomRightRadius: '4px'
+    borderBottomRightRadius: '4px',
+    boxShadow: '1px 4px 6px 0px rgba(0, 0, 0, 0.15)',
+
 })
 
 export const menuDrawerOpen = style([menuDrawerBase, {

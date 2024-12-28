@@ -1,8 +1,8 @@
 import React from "react";
-import { Page } from "../../templates/Page";
+import { HomeTemplate } from "../../templates/HomeTemplate";
 
 export default function Home() {
   return (
-   <Page/>
+   <HomeTemplate/>
   );
 }

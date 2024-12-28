@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { MenuIcon } from "../../assets/MenuIcon"
 import { navBarBefore, navBarAfter, navBarContent, navBarItem, menuDrawerOpen, menuDrawerClosed, navDrawerItem, iconHolder } from "./index.css"
 import useScreenSize from '../../hooks/useScreenSize';
+import Link from 'next/link';
 
 export const Navbar: React.FC = () => {
 
@@ -33,23 +34,22 @@ export const Navbar: React.FC = () => {
     return (
             <div className={showNav ? navBarBefore : navBarAfter}>
                 <div className={navBarContent}>
-                <p className={navBarItem}>Home</p>
-                    <p className={navBarItem}>Schedule</p>
-                    <p className={navBarItem}>Travel</p>
-                    <p className={navBarItem}>Registry</p>
-                    <p className={navBarItem}>Wedding Party</p>
-                    <p className={navBarItem}>Gallery</p>
-                    <p className={navBarItem}>Things to Do</p>
-                    <p className={navBarItem}>FAQs</p>
+                    <Link href="/" className={navBarItem}>Home</Link>
+                    <Link href={"/schedule"} className={navBarItem}>Schedule</Link>
+                    <Link href="/travel" className={navBarItem}>Travel</Link>
+                    <Link href="/registry" className={navBarItem}>Registry</Link>
+                    <Link href="/gallery" className={navBarItem}>Gallery</Link>
+                    <Link href="/things-to-do" className={navBarItem}>Things to Do</Link>
+                    <Link href="/faqs" className={navBarItem}>FAQs</Link>
                 </div>
                  <div className={isMenuDrawerOpen ? menuDrawerOpen : menuDrawerClosed}>
-                        <p className={navDrawerItem}>Schedule</p>
-                    <p className={navDrawerItem}>Travel</p>
-                    <p className={navDrawerItem}>Registry</p>
-                    <p className={navDrawerItem}>Wedding Party</p>
-                    <p className={navDrawerItem}>Gallery</p>
-                    <p className={navDrawerItem}>Things to Do</p>
-                    <p className={navDrawerItem}>FAQs</p>
+                    <Link href="/" className={navDrawerItem}>Home</Link>
+                     <Link href={"/schedule"} className={navDrawerItem}>Schedule</Link>
+                    <Link href="/travel" className={navDrawerItem}>Travel</Link>
+                    <Link href="/registry" className={navDrawerItem}>Registry</Link>
+                    <Link href="/gallery" className={navDrawerItem}>Gallery</Link>
+                    <Link href="/things-to-do" className={navDrawerItem}>Things to Do</Link>
+                    <Link href="/faqs" className={navDrawerItem}>FAQs</Link>
                 </div>
                 <div className={iconHolder} onClick={() => setIsMenuDrawerOpen((prev) => !prev)}>
                     <MenuIcon/> 
