@@ -49,6 +49,10 @@ const travelPictures: Picture[] = [
         caption: "Schloss Linderhof, Germany"
     },
     {
+        slug: 'rhodeIsland.jpeg',
+        caption: 'East Greenwich, Rhode Island'
+    },
+    {
         slug: 'lobster.jpeg',
         caption: "Santa Monica, California"
     },
@@ -110,31 +114,52 @@ export const bigMoments: Picture[] = [
     }
 ]
 
+export const familyPictures: Picture[] = [
+        {
+            slug: 'babyShower.jpeg',
+            caption: 'Baby Shower for baby Cal'
+        }, {
+            slug: 'christmas.jpeg',
+            caption: 'Christmas 2022'
+        },
+        {
+            slug: 'dijon.jpeg',
+            caption: 'Dijon, France'
+        }, {
+            slug: 'disneyFamily.jpeg',
+            caption: 'Disneyland'
+        }, {
+            slug: 'jen.jpeg',
+            caption: 'Visiting Jen in Boston'
+        }, {
+            slug: 'judy.jpeg',
+            caption: 'Visiting Judy in Carmel-By-The-Sea'
+        }, {
+            slug: 'justusCousins.png',
+            caption: 'Dinner with the Justus Cousins in Portsmouth'
+        }, {
+            slug: 'marathon.jpeg',
+            caption: 'Celebrating John running the marathon'
+        }, {
+            slug: 'miloAndOlive.png',
+            caption: 'Dinner in Santa Monica'        
+        }, {
+            slug: 'paul.jpeg',
+            caption: 'Dinner with Paul'
+        }, 
+        {
+            slug: 'thanksgiving.jpeg',
+            caption: 'Thanksgiving 2023'
+        }
+    ]
+
 
 export const GalleryTemplate: React.FC = () => {
     return (
         <Page>
             <div className={carouselsHolder}>
             
-            <div className={carousel}>
-                <div className={titleHolder}>
-                    <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
-                    <p className={title}>Our Travels</p>
-                    <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
-                </div>
-                <div className={scrollContainer}>
-                    {
-                        travelPictures.map((pic) => (
-                            <div className={imageHolder} key={pic.slug}>
-                                <img src={`/assets/${pic.slug}`} className={imageStyle}/>
-                                <div className={captionHolder}>
-                                    <p className={caption}>{pic.caption}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+  
                 <div className={carousel}>
                     <div className={titleHolder}>
                         <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
@@ -144,6 +169,44 @@ export const GalleryTemplate: React.FC = () => {
                     <div className={scrollContainer}>
                         {
                             bigMoments.map((pic) => (
+                                <div className={imageHolder} key={pic.slug}>
+                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
+                                    <div className={captionHolder}>
+                                        <p className={caption}>{pic.caption}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+                <div className={carousel}>
+                    <div className={titleHolder}>
+                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
+                        <p className={title}>Our Travels</p>
+                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
+                    </div>
+                    <div className={scrollContainer}>
+                        {
+                            travelPictures.map((pic) => (
+                                <div className={imageHolder} key={pic.slug}>
+                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
+                                    <div className={captionHolder}>
+                                        <p className={caption}>{pic.caption}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+                <div className={carousel}>
+                    <div className={titleHolder}>
+                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
+                        <p className={title}>Family Time</p>
+                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
+                    </div>
+                    <div className={scrollContainer}>
+                        {
+                            familyPictures.map((pic) => (
                                 <div className={imageHolder} key={pic.slug}>
                                     <img src={`/assets/${pic.slug}`} className={imageStyle}/>
                                     <div className={captionHolder}>
