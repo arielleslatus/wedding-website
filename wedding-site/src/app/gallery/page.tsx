@@ -1,8 +1,8 @@
 import React from "react";
-import { ComingSoonTemplate } from "../../../templates/ComingSoonTemplate";
+import { GalleryTemplate } from "../../../templates/GalleryTemplate";
 
 export default function Gallery() {
   return (
-   <ComingSoonTemplate/>
+   <GalleryTemplate/>
   );
 }

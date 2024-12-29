@@ -2,8 +2,9 @@ import { style } from "@vanilla-extract/css";
 
 export const container = style({
     width: '100%',
-    height: '200vh',
-    backgroundColor: '#fbf0ea' 
+    minHeight: '100vh',
+    backgroundColor: '#fbf0ea', 
+    paddingBottom: '60px'
 })
 
 export const childrenHolder = style({
