@@ -55,7 +55,9 @@ export const captionHolder = style({
     width: 'fit-content',
     padding: '6px',
     borderRadius: '4px',
-    marginTop: '-20px'
+    marginTop: '-20px',
+    maxWidth: '80%'
+
 })
 
 export const caption = style({
@@ -64,5 +66,6 @@ export const caption = style({
     fontWeight: 400,
     color: '#350303',
     border: '0.5px solid #350303',
-    padding: '8px'
+    padding: '8px',
+    textAlign: 'center',
 })
