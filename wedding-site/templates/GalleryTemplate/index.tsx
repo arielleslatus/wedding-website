@@ -1,8 +1,9 @@
 import React from 'react'
 import { Page } from "../Page"
-import { caption, captionHolder, carousel, carouselsHolder, flowerImageStyle, imageHolder, imageStyle, scrollContainer, title, titleHolder } from './index.css'
+import {carouselsHolder} from './index.css'
+import { ImageCarousel } from './ImageCarousel'
 
-interface Picture {
+export interface Picture {
     slug: string,
     caption: string
 }
@@ -158,65 +159,9 @@ export const GalleryTemplate: React.FC = () => {
     return (
         <Page>
             <div className={carouselsHolder}>
-            
-  
-                <div className={carousel}>
-                    <div className={titleHolder}>
-                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
-                        <p className={title}>The Big Moments</p>
-                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
-                    </div>
-                    <div className={scrollContainer}>
-                        {
-                            bigMoments.map((pic) => (
-                                <div className={imageHolder} key={pic.slug}>
-                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
-                                    <div className={captionHolder}>
-                                        <p className={caption}>{pic.caption}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <div className={carousel}>
-                    <div className={titleHolder}>
-                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
-                        <p className={title}>Our Travels</p>
-                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
-                    </div>
-                    <div className={scrollContainer}>
-                        {
-                            travelPictures.map((pic) => (
-                                <div className={imageHolder} key={pic.slug}>
-                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
-                                    <div className={captionHolder}>
-                                        <p className={caption}>{pic.caption}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-                <div className={carousel}>
-                    <div className={titleHolder}>
-                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
-                        <p className={title}>Family Time</p>
-                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
-                    </div>
-                    <div className={scrollContainer}>
-                        {
-                            familyPictures.map((pic) => (
-                                <div className={imageHolder} key={pic.slug}>
-                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
-                                    <div className={captionHolder}>
-                                        <p className={caption}>{pic.caption}</p>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
+                <ImageCarousel title='The Big Moments' pictures={bigMoments}/>
+                <ImageCarousel title='Our Travels' pictures={travelPictures}/>
+                <ImageCarousel title='Family Time' pictures={familyPictures}/>
             </div>
         </Page>
     )
