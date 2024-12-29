@@ -30,7 +30,7 @@ const travelPictures: Picture[] = [
     },
     {
         slug: 'oslo.jpeg',
-        caption: "Oslo"
+        caption: "Oslo, Norway"
     },
     {
         slug: 'germany.jpeg',
@@ -38,7 +38,7 @@ const travelPictures: Picture[] = [
     },
     {
         slug: 'goldenGate.jpeg',
-        caption: "San Francisco"
+        caption: "San Francisco, California"
     },
     {
         slug: 'washington.jpeg',
@@ -50,7 +50,7 @@ const travelPictures: Picture[] = [
     },
     {
         slug: 'lobster.jpeg',
-        caption: "Santa Monica"
+        caption: "Santa Monica, California"
     },
     {
         slug: 'bergen.jpeg',
@@ -58,7 +58,7 @@ const travelPictures: Picture[] = [
     },
     {
         slug: 'munich.jpeg',
-        caption: "Munich"
+        caption: "Munich, Germany"
     },
        {
         slug: 'norway.jpeg',
@@ -67,19 +67,19 @@ const travelPictures: Picture[] = [
  
            {
         slug: 'libertyBell.jpeg',
-        caption: "Philadelphia"
+        caption: "Philadelphia, Pennsylvania"
     },
            {
         slug: 'rome.jpeg',
-        caption: "Rome"
+        caption: "Rome, Italy"
     },
            {
         slug: 'vermont.jpeg',
-        caption: "Vermont"
+        caption: "Hardwicke, Vermont"
     },
            {
         slug: 'berlin.jpeg',
-        caption: "Berlin"
+        caption: "Berlin, Germany"
     },
 ]
 
