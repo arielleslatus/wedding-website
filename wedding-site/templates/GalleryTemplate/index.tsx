@@ -1,6 +1,6 @@
 import React from 'react'
 import { Page } from "../Page"
-import { caption, captionHolder, carousel, carouselsHolder, imageHolder, imageStyle, scrollContainer, title } from './index.css'
+import { caption, captionHolder, carousel, carouselsHolder, flowerImageStyle, imageHolder, imageStyle, scrollContainer, title, titleHolder } from './index.css'
 
 interface Picture {
     slug: string,
@@ -117,7 +117,11 @@ export const GalleryTemplate: React.FC = () => {
             <div className={carouselsHolder}>
             
             <div className={carousel}>
+                <div className={titleHolder}>
+                    <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
                     <p className={title}>Our Travels</p>
+                    <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
+                </div>
                 <div className={scrollContainer}>
                     {
                         travelPictures.map((pic) => (
@@ -132,21 +136,24 @@ export const GalleryTemplate: React.FC = () => {
                 </div>
             </div>
                 <div className={carousel}>
-                    <p className={title}>The Big Moments</p>
-                <div className={scrollContainer}>
-        {
-                        bigMoments.map((pic) => (
-                            <div className={imageHolder} key={pic.slug}>
-                                <img src={`/assets/${pic.slug}`} className={imageStyle}/>
-                                <div className={captionHolder}>
-                                    <p className={caption}>{pic.caption}</p>
+                    <div className={titleHolder}>
+                        <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
+                        <p className={title}>The Big Moments</p>
+                        <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
+                    </div>
+                    <div className={scrollContainer}>
+                        {
+                            bigMoments.map((pic) => (
+                                <div className={imageHolder} key={pic.slug}>
+                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
+                                    <div className={captionHolder}>
+                                        <p className={caption}>{pic.caption}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))
-                    }
-
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
             </div>
         </Page>
     )

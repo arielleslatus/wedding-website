@@ -11,13 +11,19 @@ export const carousel = style({
     flexDirection: 'column'
 })
 
+export const titleHolder = style({
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '20px',
+    paddingTop: '30px',
+    paddingBottom: '10px',
+})
+
 export const title = style({
     fontFamily: 'avenir next',
     fontSize: '1.25rem',
     fontWeight: 500,
-    textAlign: 'center',
-    paddingTop: '30px',
-    paddingBottom: '10px',
     color: '#350303',
 })
 
@@ -35,6 +41,11 @@ export const imageHolder = style({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center'
+})
+
+export const flowerImageStyle = style({
+    width: "50px",
+    height: "auto",
 })
 
 export const imageStyle = style({

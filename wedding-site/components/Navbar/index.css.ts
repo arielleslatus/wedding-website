@@ -71,9 +71,19 @@ export const navBarItem = style([navItemBase, {
     color: '#fbefea',
 }])
 
+const currentNavItem = style({
+    textDecoration:'underline',
+    textUnderlineOffset: '6px',
+    textDecorationThickness: '1px'
+})
+
+export const currentNavBarItem = style([navBarItem, currentNavItem])
+
 export const navDrawerItem = style([navItemBase, {
     color: '#350303',
 }])
+
+export const currentNavDrawerItem = style([navDrawerItem, currentNavItem])
 
 export const menuDrawerBase = style({
     display: "flex",
