@@ -1,5 +1,5 @@
 import React from 'react'
-import { caption, captionHolder, carousel, flowerImageStyle, imageHolder, imageStyle, scrollContainer, titleHolder } from './index.css'
+import { caption, captionHolder, carousel, flowerImageStyle, imageHolder, imageStyle, scrollContainer, titleHolder, titleStyle } from './index.css'
 import { Picture } from '..'
 
 interface ImageCarouselProps {
@@ -12,7 +12,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({title, pictures}) =
                  <div className={carousel}>
                     <div className={titleHolder}>
                         <img src={'/assets/whiteFlowerLeft.png'} className={flowerImageStyle}/>
-                        <p className={title}>{title}</p>
+                        <p className={titleStyle}>{title}</p>
                         <img src={'/assets/whiteFlowerRight.png'} className={flowerImageStyle}/>
                     </div>
                     <div className={scrollContainer}>

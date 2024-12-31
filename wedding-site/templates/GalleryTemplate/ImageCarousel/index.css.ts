@@ -24,7 +24,7 @@ export const titleHolder = style({
     paddingBottom: '10px',
 })
 
-export const title = style({
+export const titleStyle = style({
     fontFamily: 'avenir next',
     fontSize: '1.25rem',
     fontWeight: 500,
