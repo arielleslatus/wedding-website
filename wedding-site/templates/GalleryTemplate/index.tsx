@@ -71,7 +71,7 @@ const travelPictures: Picture[] = [
     },
  
            {
-        slug: 'libertyBell.jpeg',
+        slug: 'libertybell.jpeg',
         caption: "Philadelphia, Pennsylvania"
     },
            {
