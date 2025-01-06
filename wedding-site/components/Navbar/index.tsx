@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { MenuIcon } from "../../assets/MenuIcon"
-import { navBarBefore, navBarAfter, navBarContent, navBarItem, menuDrawerOpen, menuDrawerClosed, navDrawerItem, iconHolder, currentNavBarItem, currentNavDrawerItem, flowerImageStyle } from "./index.css"
+import { navBarBefore, navBarAfter, navBarContent, navBarItem, menuDrawerOpen, menuDrawerClosed, navDrawerItem, iconHolder, currentNavBarItem, currentNavDrawerItem, flowerImageStyle, linksHolder } from "./index.css"
 import useScreenSize from '../../hooks/useScreenSize';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -45,13 +45,15 @@ export const Navbar: React.FC = () => {
                     <Link href="/faqs" className={pathname === "/faqs" ? currentNavBarItem : navBarItem}>FAQs</Link>
                 </div>
                  <div className={isMenuDrawerOpen ? menuDrawerOpen : menuDrawerClosed}>
-                    <Link href="/" className={pathname === "/" ? currentNavDrawerItem : navDrawerItem}>Home</Link>
-                     <Link href={"/schedule"} className={pathname === "/schedule" ? currentNavDrawerItem : navDrawerItem}>Schedule</Link>
-                    <Link href="/travel" className={pathname === "/travel" ? currentNavDrawerItem : navDrawerItem}>Travel</Link>
-                    <Link href="/registry" className={pathname === "/registry" ? currentNavDrawerItem : navDrawerItem}>Registry</Link>
-                    <Link href="/gallery" className={pathname === "/gallery" ? currentNavDrawerItem : navDrawerItem}>Gallery</Link>
-                    <Link href="/things-to-do" className={pathname === "/things-to-do" ? currentNavDrawerItem : navDrawerItem}>Things to Do</Link>
-                    <Link href="/faqs" className={pathname === "/faqs" ? currentNavDrawerItem : navDrawerItem}>FAQs</Link>
+                    <div className={linksHolder}>
+                        <Link href="/" className={pathname === "/" ? currentNavDrawerItem : navDrawerItem}>Home</Link>
+                        <Link href={"/schedule"} className={pathname === "/schedule" ? currentNavDrawerItem : navDrawerItem}>Schedule</Link>
+                        <Link href="/travel" className={pathname === "/travel" ? currentNavDrawerItem : navDrawerItem}>Travel</Link>
+                        <Link href="/registry" className={pathname === "/registry" ? currentNavDrawerItem : navDrawerItem}>Registry</Link>
+                        <Link href="/gallery" className={pathname === "/gallery" ? currentNavDrawerItem : navDrawerItem}>Gallery</Link>
+                        <Link href="/things-to-do" className={pathname === "/things-to-do" ? currentNavDrawerItem : navDrawerItem}>Things to Do</Link>
+                        <Link href="/faqs" className={pathname === "/faqs" ? currentNavDrawerItem : navDrawerItem}>FAQs</Link>
+                    </div>
                     <img src={'/assets/tigerlily.png'} className={flowerImageStyle}/>
                 </div>
                 <div className={iconHolder} onClick={() => setIsMenuDrawerOpen((prev) => !prev)}>

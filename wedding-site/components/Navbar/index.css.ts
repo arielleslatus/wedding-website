@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css"
+import { calc } from "@vanilla-extract/css-utils"
 
 export const navBarBase = style({
     position: 'fixed',
@@ -89,16 +90,24 @@ export const menuDrawerBase = style({
     display: "flex",
     flexDirection: "column",
     alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: '30px',
     padding: "32px",
-    gap: "18px",
     position: 'fixed',
     backgroundColor: 'white',
     top: '60px',
     width: '250px',
-    height: '100%',
+    height: calc.subtract('100%', '60px'),
     boxShadow: '1px 4px 6px 0px rgba(0, 0, 0, 0.15)',
     overflowY: 'scroll'
 
+})
+
+export const linksHolder = style({
+    display: 'flex',
+    flexDirection: "column",
+    alignItems: 'center',
+    gap: "18px",
 })
 
 export const menuDrawerOpen = style([menuDrawerBase, {
