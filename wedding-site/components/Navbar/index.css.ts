@@ -88,14 +88,16 @@ export const currentNavDrawerItem = style([navDrawerItem, currentNavItem])
 export const menuDrawerBase = style({
     display: "flex",
     flexDirection: "column",
-    padding: "24px",
+    alignItems: 'center',
+    padding: "32px",
     gap: "18px",
     position: 'fixed',
     backgroundColor: 'white',
     top: '60px',
-    width: '200px',
-    borderBottomRightRadius: '4px',
+    width: '250px',
+    height: '100%',
     boxShadow: '1px 4px 6px 0px rgba(0, 0, 0, 0.15)',
+    overflowY: 'scroll'
 
 })
 
@@ -104,6 +106,13 @@ export const menuDrawerOpen = style([menuDrawerBase, {
 }])
 
 export const menuDrawerClosed = style([menuDrawerBase, {
-    left: "-200px",
+    left: "-250px",
 }])
+
+export const flowerImageStyle = style({
+    width: "100px",
+    height: "auto",
+    marginTop: '12px',
+    marginBottom: '50px'
+})
 

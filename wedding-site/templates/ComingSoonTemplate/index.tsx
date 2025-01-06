@@ -1,12 +1,17 @@
 import React from 'react'
 import { Page } from "../Page"
-import { comingSoon } from './index.css'
+import { comingSoon, container, imageHolder, imageStyle } from './index.css'
 
 
 export const ComingSoonTemplate: React.FC = () => {
     return (
         <Page>
-            <p className={comingSoon}>Coming soon...</p>
+            <div className={container}>
+                <p className={comingSoon}>Coming soon...</p>
+                <div className={imageHolder}>
+                    <img src={'/assets/dodger.png'} className={imageStyle}/>
+                </div>
+            </div>
         </Page>
     )
 }
