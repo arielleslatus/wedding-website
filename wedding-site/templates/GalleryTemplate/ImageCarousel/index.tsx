@@ -19,7 +19,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({title, pictures}) =
                         {
                             pictures.map((pic) => (
                                 <div className={imageHolder} key={pic.slug}>
-                                    <img src={`/assets/${pic.slug}`} className={imageStyle}/>
+                                    <img src={`/assets/${pic.slug}`} className={imageStyle} loading='eager'/>
                                     <div className={captionHolder}>
                                         <p className={caption}>{pic.caption}</p>
                                     </div>
