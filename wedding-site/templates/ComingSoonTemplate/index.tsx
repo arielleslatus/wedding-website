@@ -9,7 +9,7 @@ export const ComingSoonTemplate: React.FC = () => {
             <div className={container}>
                 <p className={comingSoon}>Coming soon...</p>
                 <div className={imageHolder}>
-                    <img src={'/assets/dodger.png'} className={imageStyle}/>
+                    <img src={'/assets/dodger.png'} className={imageStyle} loading='eager'/>
                 </div>
             </div>
         </Page>
