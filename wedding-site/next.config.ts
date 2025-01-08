@@ -11,6 +11,14 @@ const nextConfig: NextConfig = {
         disableStaticImages: true,
         formats: ["image/avif"],
       },
+    async rewrites() {
+    return [
+            {
+                source: "/insights/:path*/",
+                destination: "https://https://www.slatus-lamori-wedding.com/_vercel/insights/:path*/",
+            },
+        ];
+    },
       webpack: (config) => {
         config.module.rules.push({
             test: /\.(png|jpe?g|gif|svg)$/i,
