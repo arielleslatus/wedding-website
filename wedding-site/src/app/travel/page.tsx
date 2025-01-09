@@ -1,8 +1,8 @@
 import React from "react";
-import { ComingSoonTemplate } from "../../../templates/ComingSoonTemplate";
+import { TravelTemplate } from "../../../templates/TravelTemplate";
 
 export default function Travel() {
   return (
-   <ComingSoonTemplate/>
+   <TravelTemplate/>
   );
 }
