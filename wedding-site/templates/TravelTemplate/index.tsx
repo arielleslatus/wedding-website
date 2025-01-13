@@ -47,6 +47,9 @@ export const TravelTemplate: React.FC = () => {
                         access the blocks and wedding discount by mentioning the
                         Slatus LaMori wedding.
                     </p>
+                    <p className={detailStyle}>
+                        Hotel links are provided below.
+                    </p>
                     <div className={hotelBlocksHolder}>
                         <HotelBlock
                             name="The Brooklyn Hilton"

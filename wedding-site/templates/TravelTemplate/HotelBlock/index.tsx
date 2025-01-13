@@ -50,7 +50,6 @@ export const HotelBlock: React.FC<HotelBlockProps> = ({
                     onMouseOut={() => setSeeMoreColor('#350303')}
                 >
                     <p className={seeMore} style={{ color: seeMoreColor }}>
-                        {' '}
                         See more
                     </p>
                     <div className={iconHolder}>

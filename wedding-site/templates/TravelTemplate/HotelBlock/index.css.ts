@@ -3,6 +3,11 @@ import { style } from '@vanilla-extract/css';
 export const container = style({
     display: 'flex',
     gap: '32px',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            gap: '50px',
+        },
+    },
 });
 
 export const hotelInfo = style({
@@ -17,10 +22,16 @@ export const logoHolder = style({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFFFFF',
-    width: '100px',
-    height: '100px',
+    width: '80px',
+    height: '80px',
     borderRadius: '100px',
     padding: '10px',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            width: '100px',
+            height: '100px',
+        },
+    },
 });
 
 export const listStyle = style({
@@ -29,20 +40,18 @@ export const listStyle = style({
 
 export const font = style({
     fontFamily: 'Avenir Next',
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 400,
     color: '#350303',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            fontSize: '1.5rem',
+        },
+    },
 });
 
-export const detailStyle = style([
-    font,
-    {
-        textAlign: 'center',
-    },
-]);
-
 export const linkStyle = style([
-    detailStyle,
+    font,
     {
         fontWeight: 600,
         textDecoration: 'underline',
@@ -61,10 +70,21 @@ export const seeMoreRow = style({
 });
 
 export const seeMore = style({
-    fontSize: '1.125rem',
+    fontSize: '1rem',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            fontSize: '1.125rem',
+        },
+    },
 });
 
 export const iconHolder = style({
-    width: '30px',
-    height: '30px',
+    width: '24px',
+    height: '24px',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            width: '30px',
+            height: '30px',
+        },
+    },
 });

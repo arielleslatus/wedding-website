@@ -26,9 +26,14 @@ export const container = style({
 
 export const font = style({
     fontFamily: 'Avenir Next',
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 400,
     color: '#350303',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            fontSize: '1.5rem',
+        },
+    },
 });
 
 export const detailStyle = style([

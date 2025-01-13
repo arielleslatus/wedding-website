@@ -45,17 +45,22 @@ export const infoSection = style({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     gap: '24px',
-    height: '500px',
+    height: '400px',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            height: '500px',
+        },
+    },
 });
 
 export const scriptedStyle = style({
     fontFamily: 'Snell Roundhand',
-    fontSize: '3rem',
+    fontSize: '2.5rem',
     fontWeight: 600,
     color: '#350303',
     textAlign: 'center',
     '@media': {
-        ['screen and (min-width: 1000px)']: {
+        ['screen and (min-width: 600px)']: {
             fontSize: '4rem',
         },
     },
@@ -69,8 +74,13 @@ export const detailSection = style({
 
 export const detailStyle = style({
     fontFamily: 'Avenir Next',
-    fontSize: '1.5rem',
+    fontSize: '1.25rem',
     fontWeight: 400,
     color: '#350303',
     textAlign: 'center',
+    '@media': {
+        ['screen and (min-width: 600px)']: {
+            fontSize: '1.5rem',
+        },
+    },
 });
