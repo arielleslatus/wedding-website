@@ -1,8 +1,6 @@
-import React from "react";
-import { TravelTemplate } from "../../../templates/TravelTemplate";
+import React from 'react';
+import { TravelTemplate } from '../../../templates/TravelTemplate';
 
 export default function Travel() {
-  return (
-   <TravelTemplate/>
-  );
+    return <TravelTemplate />;
 }

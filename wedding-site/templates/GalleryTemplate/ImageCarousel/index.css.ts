@@ -1,9 +1,9 @@
-import { style } from "@vanilla-extract/css"
+import { style } from '@vanilla-extract/css';
 
 export const carousel = style({
     display: 'flex',
-    flexDirection: 'column'
-})
+    flexDirection: 'column',
+});
 
 export const caption = style({
     fontFamily: 'avenir next',
@@ -13,7 +13,7 @@ export const caption = style({
     border: '0.5px solid #350303',
     padding: '8px',
     textAlign: 'center',
-})
+});
 
 export const titleHolder = style({
     display: 'flex',
@@ -22,48 +22,48 @@ export const titleHolder = style({
     gap: '20px',
     paddingTop: '30px',
     paddingBottom: '10px',
-})
+});
 
 export const titleStyle = style({
     fontFamily: 'avenir next',
     fontSize: '1.25rem',
     fontWeight: 500,
     color: '#350303',
-})
+});
 
 export const scrollContainer = style({
     display: 'flex',
     overflowX: 'scroll',
-    msOverflowStyle: 'none', /* IE and Edge */
-    scrollbarWidth: 'none',  /* Firefox */
-    "::-webkit-scrollbar": { /* Chrome, Safari and Opera */
-        display: 'none'
-    }
-})
+    msOverflowStyle: 'none' /* IE and Edge */,
+    scrollbarWidth: 'none' /* Firefox */,
+    '::-webkit-scrollbar': {
+        /* Chrome, Safari and Opera */ display: 'none',
+    },
+});
 
 export const imageHolder = style({
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
-})
+    alignItems: 'center',
+});
 
 export const flowerImageStyle = style({
-    width: "50px",
-    height: "auto",
-})
+    width: '50px',
+    height: 'auto',
+});
 
 export const imageStyle = style({
-    width: "auto",
-    height: "350px",
+    width: 'auto',
+    height: '350px',
     margin: '10px',
     borderRadius: '4px',
-    "@media": {
+    '@media': {
         ['screen and (min-width: 1000px)']: {
-        width: "auto", height: "500px"
-
-        }
-    }
-})
+            width: 'auto',
+            height: '500px',
+        },
+    },
+});
 
 export const captionHolder = style({
     backgroundColor: '#FFFFFF',
@@ -71,6 +71,5 @@ export const captionHolder = style({
     padding: '6px',
     borderRadius: '4px',
     marginTop: '-20px',
-    maxWidth: '80%'
-
-})
+    maxWidth: '80%',
+});

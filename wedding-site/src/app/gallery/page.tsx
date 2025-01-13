@@ -1,8 +1,6 @@
-import React from "react";
-import { GalleryTemplate } from "../../../templates/GalleryTemplate";
+import React from 'react';
+import { GalleryTemplate } from '../../../templates/GalleryTemplate';
 
 export default function Gallery() {
-  return (
-   <GalleryTemplate/>
-  );
+    return <GalleryTemplate />;
 }
