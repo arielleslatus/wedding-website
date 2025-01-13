@@ -23,3 +23,27 @@ export const container = style({
         }
     }
 })
+
+export const font = style({
+    fontFamily: 'Avenir Next',
+    fontSize: '1.5rem',
+    fontWeight: 400,
+    color: '#350303',
+})
+
+export const detailStyle = style([font, {
+
+    textAlign: 'center'
+}])
+
+export const listStyle = style({
+    width: 'fit-content',
+    alignSelf: 'center'
+})
+
+export const linkStyle = style([detailStyle,{
+    fontWeight: 600,
+    textDecoration: 'underline',
+    textDecorationThickness: "1px",
+    textUnderlineOffset: "6px"
+}])

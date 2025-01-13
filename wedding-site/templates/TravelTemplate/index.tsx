@@ -1,7 +1,7 @@
 import React from 'react'
 import { Page } from "../Page"
-import { detailSection, detailStyle, imageHolder, imageStyle, scriptedStyle } from '../HomeTemplate/index.css'
-import { container } from './index.css'
+import { detailSection, imageHolder, imageStyle, scriptedStyle } from '../HomeTemplate/index.css'
+import { container, detailStyle, font, linkStyle, listStyle } from './index.css'
 
 
 export const TravelTemplate: React.FC = () => {
@@ -23,19 +23,42 @@ export const TravelTemplate: React.FC = () => {
                         New York City has literally thousands of hotels for you to choose from. We have reserved room blocks at 3 hotels in Brooklyn that are “moderate” in cost for New York. 
                         Should you make your reservation by phone you can also access the blocks and wedding discount by mentioning the Slatus LaMori wedding.
                     </p>
-                    <p className={detailStyle}>                        
-                        The Tru by Hilton 
-                        -Walkable to the wedding venue. 
-                    </p>
-                    <p className={detailStyle}>                        
-                        The TownPlace Suites by Marriott  
-                        - Walkable to the wedding venue. 
-                    </p>
-                     <p className={detailStyle}>                        
+                          <a href="https://www.hilton.com/en/hotels/nycbshh-hilton-brooklyn-new-york/" className={linkStyle}>
                         The Brooklyn Hilton 
-                        - An 8 minute drive from the venue. 
-                        - Requires a 2 night stay.
-                    </p>
+                    </a>
+                    <ul className={listStyle}>
+                     <li className={font}>                        
+                        An 8 minute drive from the venue. 
+                    </li>
+                    <li className={font}>                        
+                        Requires a 2 night stay.
+                    </li>
+                      <li className={font}>                        
+                        Discount for the Slatus LaMori wedding.
+                    </li>
+                    </ul >
+                    <a href="https://www.hilton.com/en/hotels/jfkibru-tru-brooklyn/" className={linkStyle}>                        
+                        The Tru by Hilton 
+                    </a>
+                    <ul className={listStyle}>
+                    <li className={font}>                        
+                        Walkable to the wedding venue. 
+                    </li>
+                    <li className={font}>                        
+                        Discount for the Slatus LaMori wedding.
+                    </li>
+                    </ul>
+                    <a href="https://www.marriott.com/en-us/hotels/nycly-towneplace-suites-new-york-brooklyn/overview/" className={linkStyle}>
+                        The TownPlace Suites by Marriott 
+                    </a>
+                    <ul className={listStyle}>
+                    <li className={font}>                        
+                        Walkable to the wedding venue. 
+                    </li>
+                      <li className={font}>                        
+                        Discount for the Slatus LaMori wedding.
+                    </li>
+               </ul>
 
                 </div>
             </div>
