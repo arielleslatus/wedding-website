@@ -38,17 +38,10 @@ export const detailStyle = style([
     },
 ]);
 
-export const listStyle = style({
-    width: 'fit-content',
-    alignSelf: 'center',
+export const hotelBlocksHolder = style({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '60px',
+    marginTop: '40px',
 });
-
-export const linkStyle = style([
-    detailStyle,
-    {
-        fontWeight: 600,
-        textDecoration: 'underline',
-        textDecorationThickness: '1px',
-        textUnderlineOffset: '6px',
-    },
-]);

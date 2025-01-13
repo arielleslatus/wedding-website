@@ -6,13 +6,11 @@ import {
     imageStyle,
     scriptedStyle,
 } from '../HomeTemplate/index.css';
-import {
-    container,
-    detailStyle,
-    font,
-    linkStyle,
-    listStyle,
-} from './index.css';
+import { container, detailStyle, hotelBlocksHolder } from './index.css';
+import { HiltonLogo } from './HotelLogos/HiltonLogo';
+import { HotelBlock } from './HotelBlock';
+import { TruLogo } from './HotelLogos/TruLogo';
+import { TownplaceSuitesLogo } from './HotelLogos/TownplaceSuitesLogo';
 
 export const TravelTemplate: React.FC = () => {
     return (
@@ -49,45 +47,37 @@ export const TravelTemplate: React.FC = () => {
                         access the blocks and wedding discount by mentioning the
                         Slatus LaMori wedding.
                     </p>
-                    <a
-                        href="https://www.hilton.com/en/hotels/nycbshh-hilton-brooklyn-new-york/"
-                        className={linkStyle}
-                    >
-                        The Brooklyn Hilton
-                    </a>
-                    <ul className={listStyle}>
-                        <li className={font}>
-                            An 8 minute drive from the venue.
-                        </li>
-                        <li className={font}>Requires a 2 night stay.</li>
-                        <li className={font}>
-                            Discount for the Slatus LaMori wedding.
-                        </li>
-                    </ul>
-                    <a
-                        href="https://www.hilton.com/en/hotels/jfkibru-tru-brooklyn/"
-                        className={linkStyle}
-                    >
-                        The Tru by Hilton
-                    </a>
-                    <ul className={listStyle}>
-                        <li className={font}>Walkable to the wedding venue.</li>
-                        <li className={font}>
-                            Discount for the Slatus LaMori wedding.
-                        </li>
-                    </ul>
-                    <a
-                        href="https://www.marriott.com/en-us/hotels/nycly-towneplace-suites-new-york-brooklyn/overview/"
-                        className={linkStyle}
-                    >
-                        The TownPlace Suites by Marriott
-                    </a>
-                    <ul className={listStyle}>
-                        <li className={font}>Walkable to the wedding venue.</li>
-                        <li className={font}>
-                            Discount for the Slatus LaMori wedding.
-                        </li>
-                    </ul>
+                    <div className={hotelBlocksHolder}>
+                        <HotelBlock
+                            name="The Brooklyn Hilton"
+                            url="https://www.hilton.com/en/hotels/nycbshh-hilton-brooklyn-new-york/"
+                            bulletPoints={[
+                                'An 8 minute drive from the venue.',
+                                'Requires a 2 night stay.',
+                                'Discount for the Slatus LaMori wedding.',
+                            ]}
+                            logo={<HiltonLogo />}
+                        />
+                        <HotelBlock
+                            name="The Tru by Hilton"
+                            url="https://www.hilton.com/en/hotels/jfkibru-tru-brooklyn/"
+                            bulletPoints={[
+                                'Walkable to the wedding venue.',
+                                'Discount for the Slatus LaMori wedding.',
+                            ]}
+                            logo={<TruLogo />}
+                        />
+
+                        <HotelBlock
+                            name="The TownPlace Suites by Marriott"
+                            url="https://www.marriott.com/en-us/hotels/nycly-towneplace-suites-new-york-brooklyn/overview/"
+                            bulletPoints={[
+                                'Walkable to the wedding venue.',
+                                'Discount for the Slatus LaMori wedding.',
+                            ]}
+                            logo={<TownplaceSuitesLogo />}
+                        />
+                    </div>
                 </div>
             </div>
             <div className={imageHolder}>
