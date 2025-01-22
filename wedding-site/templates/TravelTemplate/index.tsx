@@ -56,6 +56,7 @@ export const TravelTemplate: React.FC = () => {
                             url="https://www.hilton.com/en/hotels/nycbshh-hilton-brooklyn-new-york/"
                             bulletPoints={[
                                 'An 8 minute drive from the venue.',
+                                'We will be providing a shuttle to and from the venue.',
                                 'Requires a 2 night stay.',
                                 'Discount for the Slatus LaMori wedding.',
                             ]}
@@ -66,6 +67,7 @@ export const TravelTemplate: React.FC = () => {
                             url="https://www.hilton.com/en/hotels/jfkibru-tru-brooklyn/"
                             bulletPoints={[
                                 'Walkable to the wedding venue.',
+                                'We will be providing a shuttle to and from the venue for those who prefer not to walk.',
                                 'Discount for the Slatus LaMori wedding.',
                             ]}
                             logo={<TruLogo />}
@@ -76,6 +78,7 @@ export const TravelTemplate: React.FC = () => {
                             url="https://www.marriott.com/en-us/hotels/nycly-towneplace-suites-new-york-brooklyn/overview/"
                             bulletPoints={[
                                 'Walkable to the wedding venue.',
+                                'We will be providing a shuttle to and from the venue for those who prefer not to walk.',
                                 'Discount for the Slatus LaMori wedding.',
                             ]}
                             logo={<TownplaceSuitesLogo />}

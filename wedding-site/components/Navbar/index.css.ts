@@ -62,6 +62,9 @@ export const navBarContent = style({
 });
 
 export const navItemBase = style({
+    display: 'flex',
+    alignItems: 'center',
+    gap: '5px',
     fontFamily: 'avenir next',
     fontSize: '1.25rem',
     fontWeight: 400,
@@ -139,4 +142,10 @@ export const flowerImageStyle = style({
     height: 'auto',
     marginTop: '12px',
     marginBottom: '50px',
+});
+
+export const registryIconHolder = style({
+    width: '24px',
+    height: '24px',
+    cursor: 'pointer',
 });

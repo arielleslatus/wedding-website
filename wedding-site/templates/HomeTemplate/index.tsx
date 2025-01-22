@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../Page';
 import {
+    boldDetailStyle,
     detailSection,
     detailStyle,
     flowerClusterStyle,
@@ -30,7 +31,9 @@ export const HomeTemplate: React.FC = () => {
                             <p className={detailStyle}>September 13, 2025</p>
                         </div>
                         <div>
-                            <p className={detailStyle}>Brooklyn, NY</p>
+                            <p className={boldDetailStyle}>501 UNION</p>
+                            <p className={detailStyle}>499 Union Street</p>
+                            <p className={detailStyle}>Brooklyn, NY 11231</p>
                         </div>
                     </div>
                 </div>

@@ -84,3 +84,10 @@ export const detailStyle = style({
         },
     },
 });
+
+export const boldDetailStyle = style([
+    detailStyle,
+    {
+        fontWeight: 600,
+    },
+]);

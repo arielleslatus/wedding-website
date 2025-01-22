@@ -13,10 +13,12 @@ import {
     currentNavDrawerItem,
     flowerImageStyle,
     linksHolder,
+    registryIconHolder,
 } from './index.css';
 import useScreenSize from '../../hooks/useScreenSize';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ExternalLink } from '../Icons/ExternalLink';
 
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
@@ -78,16 +80,6 @@ export const Navbar: React.FC = () => {
                     Travel
                 </Link>
                 <Link
-                    href="/registry"
-                    className={
-                        pathname === '/registry'
-                            ? currentNavBarItem
-                            : navBarItem
-                    }
-                >
-                    Registry
-                </Link>
-                <Link
                     href="/gallery"
                     className={
                         pathname === '/gallery' ? currentNavBarItem : navBarItem
@@ -113,8 +105,20 @@ export const Navbar: React.FC = () => {
                 >
                     FAQs
                 </Link>
+                <a
+                    href="https://www.zola.com/registry/arielleandnicolas"
+                    className={navBarItem}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Registry
+                    <div className={registryIconHolder}>
+                        <ExternalLink color="#FFFFFF" />
+                    </div>
+                </a>
             </div>
             <div
+                id="navDrawer"
                 className={isMenuDrawerOpen ? menuDrawerOpen : menuDrawerClosed}
             >
                 <div className={linksHolder}>
@@ -149,16 +153,6 @@ export const Navbar: React.FC = () => {
                         Travel
                     </Link>
                     <Link
-                        href="/registry"
-                        className={
-                            pathname === '/registry'
-                                ? currentNavDrawerItem
-                                : navDrawerItem
-                        }
-                    >
-                        Registry
-                    </Link>
-                    <Link
                         href="/gallery"
                         className={
                             pathname === '/gallery'
@@ -188,6 +182,15 @@ export const Navbar: React.FC = () => {
                     >
                         FAQs
                     </Link>
+                    <a
+                        href="https://www.zola.com/registry/arielleandnicolas"
+                        className={navDrawerItem}
+                    >
+                        Registry
+                        <div className={registryIconHolder}>
+                            <ExternalLink color="#000000" />
+                        </div>
+                    </a>
                 </div>
                 <img
                     src={'/assets/tigerlily.png'}
