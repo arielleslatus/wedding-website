@@ -47,6 +47,8 @@ export const hotelBlocksHolder = style({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    alignSelf: 'center',
+    maxWidth: '750px',
     gap: '60px',
     marginTop: '40px',
 });
