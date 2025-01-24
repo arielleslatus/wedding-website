@@ -153,7 +153,7 @@ export const familyPictures: Picture[] = [
         caption: 'Dinner in Santa Monica',
     },
     {
-        slug: 'hanukkah.jpeg',
+        slug: 'hanukkah.JPG',
         caption: 'Hanukkah 2022',
     },
     {
