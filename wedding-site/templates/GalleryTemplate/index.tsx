@@ -137,6 +137,10 @@ export const familyPictures: Picture[] = [
         caption: 'Visiting Jen in Boston',
     },
     {
+        slug: 'hanukkah2024.jpg',
+        caption: 'Hanukkah 2024',
+    },
+    {
         slug: 'judy.jpeg',
         caption: 'Visiting Judy in Carmel-By-The-Sea',
     },
