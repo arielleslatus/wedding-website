@@ -153,8 +153,8 @@ export const familyPictures: Picture[] = [
         caption: 'Dinner in Santa Monica',
     },
     {
-        slug: 'marathon.jpeg',
-        caption: 'Celebrating John running the marathon',
+        slug: 'hanukkah.jpeg',
+        caption: 'Hanukkah 2022',
     },
     {
         slug: 'paul.jpeg',
