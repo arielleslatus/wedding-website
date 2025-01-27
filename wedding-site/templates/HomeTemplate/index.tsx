@@ -11,7 +11,7 @@ import {
     scriptedStyle,
     topSectionHolder,
 } from './index.css';
-import { imageBlobUrlBase } from '../../src/app/page';
+import { imageBlobUrlBase } from '../../../utils/linkUtils';
 
 export const HomeTemplate: React.FC = () => {
     return (

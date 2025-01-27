@@ -11,7 +11,7 @@ import {
     titleStyle,
 } from './index.css';
 import { Picture } from '..';
-import { imageBlobUrlBase } from '../../../src/app/page';
+import { imageBlobUrlBase } from '../../../../utils/linkUtils';
 
 interface ImageCarouselProps {
     title: string;

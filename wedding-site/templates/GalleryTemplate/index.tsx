@@ -2,7 +2,7 @@ import React from 'react';
 import { Page } from '../Page';
 import { carouselsHolder } from './index.css';
 import { ImageCarousel } from './ImageCarousel';
-import { imageBlobUrlBase } from '../../src/app/page';
+import { imageBlobUrlBase } from '../../../utils/linkUtils';
 
 export interface Picture {
     slug: string;

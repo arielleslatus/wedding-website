@@ -19,7 +19,7 @@ import useScreenSize from '../../hooks/useScreenSize';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ExternalLink } from '../Icons/ExternalLink';
-import { imageBlobUrlBase } from '../../src/app/page';
+import { imageBlobUrlBase } from '../../../utils/linkUtils';
 
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
