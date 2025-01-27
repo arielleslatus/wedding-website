@@ -89,7 +89,7 @@ export const TravelTemplate: React.FC = () => {
             </div>
             <div className={imageHolder}>
                 <img
-                    src={`${imageBlobUrlBase}saveTheDateBack.jpeg`}
+                    src={`${imageBlobUrlBase}/saveTheDateBack.jpeg`}
                     className={imageStyle}
                 />
             </div>
