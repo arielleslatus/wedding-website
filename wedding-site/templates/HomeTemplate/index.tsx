@@ -11,13 +11,14 @@ import {
     scriptedStyle,
     topSectionHolder,
 } from './index.css';
+import { imageBlobUrlBase } from '../../src/app/layout';
 
 export const HomeTemplate: React.FC = () => {
     return (
         <Page>
             <div className={topSectionHolder}>
                 <img
-                    src={'/assets/flowerCluster.png'}
+                    src={`${imageBlobUrlBase}/flowerCluster.png`}
                     className={flowerClusterStyle}
                 />
                 <div className={infoSection}>
@@ -40,7 +41,7 @@ export const HomeTemplate: React.FC = () => {
             </div>
             <div className={imageHolder}>
                 <img
-                    src={'/assets/saveTheDateBack.jpeg'}
+                    src={`${imageBlobUrlBase}/saveTheDateBack.jpeg`}
                     className={imageStyle}
                 />
             </div>

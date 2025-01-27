@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../Page';
 import { comingSoon, container, imageHolder, imageStyle } from './index.css';
+import { imageBlobUrlBase } from '../../src/app/layout';
 
 export const ComingSoonTemplate: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ export const ComingSoonTemplate: React.FC = () => {
                 <p className={comingSoon}>Coming soon...</p>
                 <div className={imageHolder}>
                     <img
-                        src={'/assets/dodger.png'}
+                        src={`${imageBlobUrlBase}/dodger.png`}
                         className={imageStyle}
                         loading="eager"
                     />

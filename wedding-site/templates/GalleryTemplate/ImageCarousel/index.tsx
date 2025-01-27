@@ -11,6 +11,7 @@ import {
     titleStyle,
 } from './index.css';
 import { Picture } from '..';
+import { imageBlobUrlBase } from '../../../src/app/layout';
 
 interface ImageCarouselProps {
     title: string;
@@ -25,12 +26,12 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
         <div className={carousel}>
             <div className={titleHolder}>
                 <img
-                    src={'/assets/whiteFlowerLeft.png'}
+                    src={`${imageBlobUrlBase}/whiteFlowerLeft.png`}
                     className={flowerImageStyle}
                 />
                 <p className={titleStyle}>{title}</p>
                 <img
-                    src={'/assets/whiteFlowerRight.png'}
+                    src={`${imageBlobUrlBase}/whiteFlowerRight.png`}
                     className={flowerImageStyle}
                 />
             </div>
@@ -38,7 +39,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 {pictures.map((pic) => (
                     <div className={imageHolder} key={pic.slug}>
                         <img
-                            src={`/assets/${pic.slug}`}
+                            src={pic.slug}
                             className={imageStyle}
                             loading="eager"
                         />

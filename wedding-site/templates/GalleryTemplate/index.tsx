@@ -2,6 +2,7 @@ import React from 'react';
 import { Page } from '../Page';
 import { carouselsHolder } from './index.css';
 import { ImageCarousel } from './ImageCarousel';
+import { imageBlobUrlBase } from '../../src/app/layout';
 
 export interface Picture {
     slug: string;
@@ -10,162 +11,162 @@ export interface Picture {
 
 const travelPictures: Picture[] = [
     {
-        slug: 'northCarolina.jpeg',
+        slug: `${imageBlobUrlBase}/northCarolina.jpeg`,
         caption: 'Millers Creek, North Carolina',
     },
     {
-        slug: 'venice.jpeg',
+        slug: `${imageBlobUrlBase}/venice.jpeg`,
         caption: 'Venice, Italy',
     },
     {
-        slug: 'disneyland.jpeg',
+        slug: `${imageBlobUrlBase}/disneyland.jpeg`,
         caption: 'Disneyland',
     },
     {
-        slug: 'beaune.jpeg',
+        slug: `${imageBlobUrlBase}/beaune.jpeg`,
         caption: 'Beaune, France',
     },
     {
-        slug: 'sebasco.jpeg',
+        slug: `${imageBlobUrlBase}/sebasco.jpeg`,
         caption: 'Sebasco Harbor, Maine',
     },
     {
-        slug: 'oslo.jpeg',
+        slug: `${imageBlobUrlBase}/oslo.jpeg`,
         caption: 'Oslo, Norway',
     },
     {
-        slug: 'germany.jpeg',
+        slug: `${imageBlobUrlBase}/germany.jpeg`,
         caption: 'Neuschwanstein Castle, Germany',
     },
     {
-        slug: 'goldenGate.jpeg',
+        slug: `${imageBlobUrlBase}/goldenGate.jpeg`,
         caption: 'San Francisco, California',
     },
     {
-        slug: 'washington.jpeg',
+        slug: `${imageBlobUrlBase}/washington.jpeg`,
         caption: 'Enumclaw, Washington',
     },
     {
-        slug: 'germanPalace.jpeg',
+        slug: `${imageBlobUrlBase}/germanPalace.jpeg`,
         caption: 'Schloss Linderhof, Germany',
     },
     {
-        slug: 'rhodeIsland.jpeg',
+        slug: `${imageBlobUrlBase}/rhodeIsland.jpeg`,
         caption: 'East Greenwich, Rhode Island',
     },
     {
-        slug: 'lobster.jpeg',
+        slug: `${imageBlobUrlBase}/lobster.jpeg`,
         caption: 'Santa Monica, California',
     },
     {
-        slug: 'bergen.jpeg',
+        slug: `${imageBlobUrlBase}/bergen.jpeg`,
         caption: 'Bergen, Norway',
     },
     {
-        slug: 'munich.jpeg',
+        slug: `${imageBlobUrlBase}/munich.jpeg`,
         caption: 'Munich, Germany',
     },
     {
-        slug: 'norway.jpeg',
+        slug: `${imageBlobUrlBase}/norway.jpeg`,
         caption: 'Gudvangen, Norway',
     },
 
     {
-        slug: 'libertybell.jpeg',
+        slug: `${imageBlobUrlBase}/libertybell.jpeg`,
         caption: 'Philadelphia, Pennsylvania',
     },
     {
-        slug: 'rome.jpeg',
+        slug: `${imageBlobUrlBase}/rome.jpeg`,
         caption: 'Rome, Italy',
     },
     {
-        slug: 'vermont.jpeg',
+        slug: `${imageBlobUrlBase}/vermont.jpeg`,
         caption: 'Hardwicke, Vermont',
     },
     {
-        slug: 'berlin.jpeg',
+        slug: `${imageBlobUrlBase}/berlin.jpeg`,
         caption: 'Berlin, Germany',
     },
 ];
 
 export const bigMoments: Picture[] = [
     {
-        slug: 'bostonCommon.jpeg',
+        slug: `${imageBlobUrlBase}/bostonCommon.jpeg`,
         caption: 'Nick visited Arielle in Boston for the first time',
     },
     {
-        slug: 'graduation.jpeg',
+        slug: `${imageBlobUrlBase}/graduation.jpeg`,
         caption: 'Arielle finished grad school',
     },
     {
-        slug: 'roadtrip.png',
+        slug: `${imageBlobUrlBase}/roadtrip.png`,
         caption: 'We drove across the country to move to NYC',
     },
     {
-        slug: 'dodgerGotcha.png',
+        slug: `${imageBlobUrlBase}/dodgerGotcha.png`,
         caption: 'We adopted Dodger',
     },
     {
-        slug: 'moneyshot.jpeg',
+        slug: `${imageBlobUrlBase}/moneyshot.jpeg`,
         caption: 'We got engaged!',
     },
     {
-        slug: 'domesticPartnership.jpeg',
+        slug: `${imageBlobUrlBase}/domesticPartnership.jpeg`,
         caption: 'We got a domestic partnership',
     },
 ];
 
 export const familyPictures: Picture[] = [
     {
-        slug: 'babyShower.jpeg',
+        slug: `${imageBlobUrlBase}/babyShower.jpeg`,
         caption: 'Baby Shower for baby Cal',
     },
     {
-        slug: 'christmas.jpeg',
+        slug: `${imageBlobUrlBase}/christmas.jpeg`,
         caption: 'Christmas 2022',
     },
     {
-        slug: 'dijon.jpeg',
+        slug: `${imageBlobUrlBase}/dijon.jpeg`,
         caption: 'Dijon, France',
     },
     {
-        slug: 'disneyFamily.jpeg',
+        slug: `${imageBlobUrlBase}/disneyFamily.jpeg`,
         caption: 'Disneyland',
     },
     {
-        slug: 'jen.jpeg',
+        slug: `${imageBlobUrlBase}/jen.jpeg`,
         caption: 'Visiting Jen in Boston',
     },
     {
-        slug: 'hanukkah2024.jpg',
+        slug: `${imageBlobUrlBase}/hanukkah2024.jpg`,
         caption: 'Hanukkah 2024',
     },
     {
-        slug: 'judy.jpeg',
+        slug: `${imageBlobUrlBase}/judy.jpeg`,
         caption: 'Visiting Judy in Carmel-By-The-Sea',
     },
     {
-        slug: 'justusCousins.png',
+        slug: `${imageBlobUrlBase}/justusCousins.png`,
         caption: 'Dinner with the Justus Cousins in Portsmouth',
     },
     {
-        slug: 'marathon.jpeg',
+        slug: `${imageBlobUrlBase}/marathon.jpeg`,
         caption: 'Celebrating John running the marathon',
     },
     {
-        slug: 'miloAndOlive.png',
+        slug: `${imageBlobUrlBase}/miloAndOlive.png`,
         caption: 'Dinner in Santa Monica',
     },
     {
-        slug: 'hanukkah.JPG',
+        slug: `${imageBlobUrlBase}/hanukkah.JPG`,
         caption: 'Hanukkah 2022',
     },
     {
-        slug: 'paul.jpeg',
+        slug: `${imageBlobUrlBase}/paul.jpeg`,
         caption: 'Dinner with Paul',
     },
     {
-        slug: 'thanksgiving.jpeg',
+        slug: `${imageBlobUrlBase}/thanksgiving.jpeg`,
         caption: 'Thanksgiving 2023',
     },
 ];

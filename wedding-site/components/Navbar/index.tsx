@@ -95,7 +95,7 @@ export const Navbar: React.FC = () => {
                             : navBarItem
                     }
                 >
-                    Things to Do
+                    Things to Do in NYC
                 </Link>
                 <Link
                     href="/faqs"
@@ -170,7 +170,7 @@ export const Navbar: React.FC = () => {
                                 : navDrawerItem
                         }
                     >
-                        Things to Do
+                        Things to Do in NYC
                     </Link>
                     <Link
                         href="/faqs"
@@ -193,7 +193,7 @@ export const Navbar: React.FC = () => {
                     </a>
                 </div>
                 <img
-                    src={'/assets/tigerlily.png'}
+                    src={`https://xodb1waco49iw3dy.public.blob.vercel-storage.com/images/tigerlily.png`}
                     className={flowerImageStyle}
                 />
             </div>
