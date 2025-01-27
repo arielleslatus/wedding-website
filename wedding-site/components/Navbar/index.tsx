@@ -19,6 +19,7 @@ import useScreenSize from '../../hooks/useScreenSize';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ExternalLink } from '../Icons/ExternalLink';
+import { imageBlobUrlBase } from '../../src/app/page';
 
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
@@ -193,7 +194,7 @@ export const Navbar: React.FC = () => {
                     </a>
                 </div>
                 <img
-                    src={`https://xodb1waco49iw3dy.public.blob.vercel-storage.com/images/tigerlily.png`}
+                    src={`${imageBlobUrlBase}/tigerlily.png`}
                     className={flowerImageStyle}
                 />
             </div>

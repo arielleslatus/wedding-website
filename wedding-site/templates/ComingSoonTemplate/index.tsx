@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page } from '../Page';
 import { comingSoon, container, imageHolder, imageStyle } from './index.css';
-import { imageBlobUrlBase } from '../../src/app/layout';
+import { imageBlobUrlBase } from '../../src/app/page';
 
 export const ComingSoonTemplate: React.FC = () => {
     return (
