@@ -20,6 +20,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ExternalLink } from '../Icons/ExternalLink';
 import { imageBlobUrlBase } from '../../../utils/linkUtils';
+import Image from 'next/image'
 
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
@@ -193,10 +194,12 @@ export const Navbar: React.FC = () => {
                         </div>
                     </a>
                 </div>
-                <img
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/tigerlily.png`}
-                    className={flowerImageStyle}
-                />
+                    className={flowerImageStyle} alt={''}                />
             </div>
             <div
                 className={iconHolder}

@@ -12,15 +12,18 @@ import {
     topSectionHolder,
 } from './index.css';
 import { imageBlobUrlBase } from '../../../utils/linkUtils';
+import Image from 'next/image'
 
 export const HomeTemplate: React.FC = () => {
     return (
         <Page>
             <div className={topSectionHolder}>
-                <img
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/flowerCluster.png`}
-                    className={flowerClusterStyle}
-                />
+                    className={flowerClusterStyle} alt={''}                />
                 <div className={infoSection}>
                     <span className={scriptedStyle}>
                         <p>Arielle Slatus</p>
@@ -39,11 +42,13 @@ export const HomeTemplate: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className={imageHolder}>
-                <img
+            <div className={imageHolder} >
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/saveTheDateBack.jpeg`}
-                    className={imageStyle}
-                />
+                    className={imageStyle} alt={''}                />
             </div>
         </Page>
     );

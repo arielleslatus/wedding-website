@@ -12,6 +12,7 @@ import {
 } from './index.css';
 import { Picture } from '..';
 import { imageBlobUrlBase } from '../../../../utils/linkUtils';
+import Image from 'next/image'
 
 interface ImageCarouselProps {
     title: string;
@@ -25,24 +26,30 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
     return (
         <div className={carousel}>
             <div className={titleHolder}>
-                <img
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/whiteFlowerLeft.png`}
-                    className={flowerImageStyle}
-                />
+                    className={flowerImageStyle} alt={''}                />
                 <p className={titleStyle}>{title}</p>
-                <img
+                <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/whiteFlowerRight.png`}
-                    className={flowerImageStyle}
-                />
+                    className={flowerImageStyle} alt={''}                />
             </div>
             <div className={scrollContainer}>
                 {pictures.map((pic) => (
                     <div className={imageHolder} key={pic.slug}>
-                        <img
+                        <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
                             src={pic.slug}
                             className={imageStyle}
-                            loading="eager"
-                        />
+                            loading="eager" alt={''}                        />
                         <div className={captionHolder}>
                             <p className={caption}>{pic.caption}</p>
                         </div>
