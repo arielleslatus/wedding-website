@@ -12,6 +12,7 @@ import { HotelBlock } from './HotelBlock';
 import { TruLogo } from './HotelLogos/TruLogo';
 import { TownplaceSuitesLogo } from './HotelLogos/TownplaceSuitesLogo';
 import { imageBlobUrlBase } from '../../../utils/linkUtils';
+import Image from 'next/image'
 
 export const TravelTemplate: React.FC = () => {
     return (
@@ -88,10 +89,9 @@ export const TravelTemplate: React.FC = () => {
                 </div>
             </div>
             <div className={imageHolder}>
-                <img
+                <Image
                     src={`${imageBlobUrlBase}/saveTheDateBack.jpeg`}
-                    className={imageStyle}
-                />
+                    className={imageStyle} alt={''}                />
             </div>
         </Page>
     );
