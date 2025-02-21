@@ -195,6 +195,9 @@ export const Navbar: React.FC = () => {
                     </a>
                 </div>
                 <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/tigerlily.png`}
                     className={flowerImageStyle} alt={''}                />
             </div>

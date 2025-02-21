@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
     images: {
         disableStaticImages: true,
         formats: ["image/avif"],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'xodb1waco49iw3dy.public.blob.vercel-storage.com',
+                port: '',
+                pathname: '/images/**',
+                search: '',
+            },
+        ],
       },
     async rewrites() {
     return [

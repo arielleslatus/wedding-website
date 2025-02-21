@@ -11,6 +11,9 @@ export const ComingSoonTemplate: React.FC = () => {
                 <p className={comingSoon}>Coming soon...</p>
                 <div className={imageHolder}>
                     <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
                         src={`${imageBlobUrlBase}/dodger.png`}
                         className={imageStyle}
                         loading="eager" alt={''}                    />

@@ -19,6 +19,9 @@ export const HomeTemplate: React.FC = () => {
         <Page>
             <div className={topSectionHolder}>
                 <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/flowerCluster.png`}
                     className={flowerClusterStyle} alt={''}                />
                 <div className={infoSection}>
@@ -39,8 +42,11 @@ export const HomeTemplate: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className={imageHolder}>
+            <div className={imageHolder} >
                 <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/saveTheDateBack.jpeg`}
                     className={imageStyle} alt={''}                />
             </div>

@@ -27,10 +27,16 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
         <div className={carousel}>
             <div className={titleHolder}>
                 <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/whiteFlowerLeft.png`}
                     className={flowerImageStyle} alt={''}                />
                 <p className={titleStyle}>{title}</p>
                 <Image
+                    width={0}
+                    height={0}
+                    sizes="100vw"
                     src={`${imageBlobUrlBase}/whiteFlowerRight.png`}
                     className={flowerImageStyle} alt={''}                />
             </div>
@@ -38,6 +44,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 {pictures.map((pic) => (
                     <div className={imageHolder} key={pic.slug}>
                         <Image
+                            width={0}
+                            height={0}
+                            sizes="100vw"
                             src={pic.slug}
                             className={imageStyle}
                             loading="eager" alt={''}                        />
