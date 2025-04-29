@@ -1,6 +1,12 @@
 import React from 'react';
 import { ComingSoonTemplate } from '../../../templates/ComingSoonTemplate';
 
-export default function FAQs() {
-    return <ComingSoonTemplate />;
+import { createClient } from '../../../utils/supabase/server';
+
+
+
+export default async function FAQs() {
+
+
+    return <div><ComingSoonTemplate /> </div>;
 }
