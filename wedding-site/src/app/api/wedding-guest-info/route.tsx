@@ -6,8 +6,8 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
 
     const { data: wedding_guests } = await supabase.from("wedding_guests")
-        .select('id, first_name,last_name, wedding_invitation(id, plus_one)')
-        .eq('invitation_id', searchParams.get('invitation_id') as string);
+        .select('wedding_guest_id, first_name,last_name, wedding_invitation(wedding_invitation_id, plus_one)')
+        .eq('wedding_invitation_id', searchParams.get('invitation_id') as string);
     return Response.json({ wedding_guests })
 }
 
@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
                     "invited_to_brunch": user.invited_to_brunch,
                     "dietary_restrictions": user.dietary_restrictions
                 })
-                .eq('id', user.id);
+                .eq('wedding_guest_id', user.id);
             if (error) {
                 return Response.json({ error });
             }
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
                     "invited_to_welcome_event": user.invited_to_welcome_event,
                     "invited_to_brunch": user.invited_to_brunch,
                     "dietary_restrictions": user.dietary_restrictions,
-                    "invitation_id": user.invitation_id});
+                    "wedding_invitation_id": user.invitation_id});
             if (error) {
                 return Response.json({ error });
             }
