@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ef56f45-0e0d-43ea-90d9-6dbfc4181dfc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/wedding-site/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wedding-site/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wedding-site/src/app/api/wedding-guest-names/route.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/wedding-site/src/app/api/wedding-guest-names/route.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2tHKHDlrlJZwIIaLCcyCQIgNNzw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;database&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/nicolaslamori/Documents/Git Stuff/wedding-website/wedding-site/src/app/api&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/Users/nicolaslamori/Library/Application Support/JetBrains/WebStorm2024.3/node/versions/22.14.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/nicolaslamori/Documents/Git Stuff/wedding-website/wedding-site/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding-site/src/app/api" />
+      <recent name="$PROJECT_DIR$/wedding-site/src/api/wedding-guest-info" />
+      <recent name="$PROJECT_DIR$/wedding-site" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wedding-site/src/app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ef56f45-0e0d-43ea-90d9-6dbfc4181dfc" name="Changes" comment="" />
+      <created>1740003470103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740003470103</updated>
+      <workItem from="1740003471299" duration="2796000" />
+      <workItem from="1740097534049" duration="4175000" />
+      <workItem from="1740757279806" duration="1000" />
+      <workItem from="1740866633345" duration="3546000" />
+      <workItem from="1740933295747" duration="1286000" />
+      <workItem from="1741046951283" duration="33000" />
+      <workItem from="1745276311899" duration="5501000" />
+      <workItem from="1745878987955" duration="10280000" />
+      <workItem from="1746066670145" duration="3103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/wedding-site/src/app/api/wedding-guest-info/route.tsx</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/wedding-site/src/app/api/wedding-guest-names/route.tsx</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
