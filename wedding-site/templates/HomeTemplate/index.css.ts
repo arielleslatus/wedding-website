@@ -59,6 +59,7 @@ export const scriptedStyle = style({
     fontWeight: 600,
     color: '#350303',
     textAlign: 'center',
+    zIndex: 9999,
     '@media': {
         ['screen and (min-width: 600px)']: {
             fontSize: '4rem',
