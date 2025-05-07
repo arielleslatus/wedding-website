@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     //supabase doesn't support nested queries???
     const { data: invitation_id } = await supabase.from("wedding_guests")
         .select('wedding_invitation_id')
-        .ilike('full_name)', '%' + name + '%')
+        .ilike('full_name', '%' + name + '%')
         //.or('concat(first_name, \' \', last_name).ilike(%arielle%');
     if (!invitation_id){
         return Response.json({});
