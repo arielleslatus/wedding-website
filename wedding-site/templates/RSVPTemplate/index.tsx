@@ -2,14 +2,20 @@
 import React, { useState } from 'react';
 import { Page } from '../Page';
 import { buttonStyle, container, contentHolder, inputStyle } from './index.css';
-import { getNames } from '../../apiClient/names';
+import { getNames, Invitation } from '../../apiClient/names';
+import { SearchResult } from './SearchResult';
 
 export const RSVPTemplate: React.FC = () => {
     const [name, setName] = useState<string>('');
+    const [foundInvitations, setFoundInvitations] = useState<Invitation[]>([]);
+
     const onClick = async () => {
-        const names = await getNames(name);
-        console.log(names);
+        const invitations = await getNames(name);
+        if (invitations) {
+            setFoundInvitations(invitations);
+        }
     };
+
     return (
         <Page>
             <div className={container}>
@@ -32,6 +38,17 @@ export const RSVPTemplate: React.FC = () => {
                     >
                         Find your invitation
                     </button>
+
+                    {foundInvitations && (
+                        <div>
+                            {foundInvitations.map((invite) => (
+                                <SearchResult
+                                    key={invite.id}
+                                    weddingGuests={invite.weddingGuests}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </Page>
