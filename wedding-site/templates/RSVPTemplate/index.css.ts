@@ -29,3 +29,9 @@ export const buttonStyle = style({
     borderRadius: '8px',
     fontWeight: 500,
 });
+
+export const searchResultsHolder = style({
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+});

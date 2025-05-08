@@ -1,13 +1,21 @@
 'use client';
 import React, { useState } from 'react';
 import { Page } from '../Page';
-import { buttonStyle, container, contentHolder, inputStyle } from './index.css';
+import {
+    buttonStyle,
+    container,
+    contentHolder,
+    inputStyle,
+    searchResultsHolder,
+} from './index.css';
 import { getNames, Invitation } from '../../apiClient/names';
 import { SearchResult } from './SearchResult';
 
 export const RSVPTemplate: React.FC = () => {
     const [name, setName] = useState<string>('');
     const [foundInvitations, setFoundInvitations] = useState<Invitation[]>([]);
+    const [selectedInvitationId, setSelectedInvitationId] =
+        useState<string>('');
 
     const onClick = async () => {
         const invitations = await getNames(name);
@@ -40,11 +48,18 @@ export const RSVPTemplate: React.FC = () => {
                     </button>
 
                     {foundInvitations && (
-                        <div>
+                        <div className={searchResultsHolder}>
                             {foundInvitations.map((invite) => (
                                 <SearchResult
                                     key={invite.id}
+                                    id={invite.id}
                                     weddingGuests={invite.weddingGuests}
+                                    isChecked={
+                                        selectedInvitationId == invite.id
+                                    }
+                                    onCheck={() =>
+                                        setSelectedInvitationId(invite.id)
+                                    }
                                 />
                             ))}
                         </div>
