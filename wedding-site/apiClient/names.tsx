@@ -3,6 +3,10 @@ import { InvitationModel } from '../src/app/api/wedding-guest-names/route';
 export interface Invitation {
     id: string;
     weddingGuests: WeddingGuest[];
+    invitedToBrunch: boolean;
+    invitedToRehearsalDinner: boolean;
+    invitedToWedding: boolean;
+    invitedToWelcomeEvent: boolean;
 }
 
 export interface WeddingGuest {
@@ -24,7 +28,7 @@ export async function getNames(
 
         const invitationModels: InvitationModel[] = await response.json();
         const invitations: Invitation[] = [];
-        invitationModels.forEach((invite) => {
+        invitationModels.forEach(async (invite) => {
             const invitation: Invitation = {
                 id: invite.id,
                 weddingGuests: invite.wedding_guests.map((guest) => {
@@ -35,6 +39,12 @@ export async function getNames(
                         weddingInvitationId: guest.wedding_invitation_id,
                     };
                 }),
+                invitedToBrunch: invite.wedding_guests[0].invited_to_brunch,
+                invitedToRehearsalDinner:
+                    invite.wedding_guests[0].invited_to_rehearsal_dinner,
+                invitedToWedding: invite.wedding_guests[0].invited_to_wedding,
+                invitedToWelcomeEvent:
+                    invite.wedding_guests[0].invited_to_welcome_event,
             };
             invitations.push(invitation);
         });

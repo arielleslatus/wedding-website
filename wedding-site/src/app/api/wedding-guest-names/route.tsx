@@ -11,6 +11,10 @@ export interface WeddingGuestModel {
     last_name: string;
     wedding_guest_id: string;
     wedding_invitation_id: string;
+    invited_to_brunch: boolean;
+    invited_to_rehearsal_dinner: boolean;
+    invited_to_wedding: boolean;
+    invited_to_welcome_event: boolean;
 }
 
 export async function GET(request: NextRequest) {
@@ -32,7 +36,9 @@ export async function GET(request: NextRequest) {
     }
     const { data: wedding_guests } = await supabase
         .from('wedding_guests')
-        .select('wedding_guest_id, first_name,last_name, wedding_invitation_id')
+        .select(
+            'wedding_guest_id, first_name,last_name, wedding_invitation_id, invited_to_wedding, invited_to_bridal_shower, invited_to_rehearsal_dinner, invited_to_welcome_event, invited_to_brunch'
+        )
         .in(
             'wedding_invitation_id',
             invitation_id.reduce(
