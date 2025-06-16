@@ -53,35 +53,35 @@ export const TravelTemplate: React.FC = () => {
                         Hotel links are provided below.
                     </p>
                     <div className={hotelBlocksHolder}>
-                        <HotelBlock
+                 <HotelBlock
                             name="The Brooklyn Hilton"
-                            url="https://www.hilton.com/en/hotels/nycbshh-hilton-brooklyn-new-york/"
+                            url="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=NYCBSHH&groupCode=WLS&arrivaldate=2025-09-12&departuredate=2025-09-14&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
                             bulletPoints={[
                                 'An 8 minute drive from the venue.',
                                 'We will be providing a shuttle to and from the venue.',
                                 'Requires a 2 night stay.',
-                                'Discount for the Slatus LaMori wedding.',
+                                'Discount for the Slatus LaMori wedding: use code "WLS"',
                             ]}
                             logo={<HiltonLogo />}
                         />
                         <HotelBlock
                             name="The Tru by Hilton"
-                            url="https://www.hilton.com/en/hotels/jfkibru-tru-brooklyn/"
+                            url="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=JFKIBRU&groupCode=ASN&arrivaldate=2025-09-12&departuredate=2025-09-14&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
                             bulletPoints={[
                                 'Walkable to the wedding venue.',
                                 'We will be providing a shuttle to and from the venue for those who prefer not to walk.',
-                                'Discount for the Slatus LaMori wedding.',
+                                'Discount for the Slatus LaMori wedding: use code "ASN"',
                             ]}
                             logo={<TruLogo />}
                         />
 
                         <HotelBlock
                             name="The TownPlace Suites by Marriott"
-                            url="https://www.marriott.com/en-us/hotels/nycly-towneplace-suites-new-york-brooklyn/overview/"
+                            url="https://www.marriott.com/event-reservations/reservation-link.mi?id=1731683526677&key=GRP&guestreslink2=true"
                             bulletPoints={[
                                 'Walkable to the wedding venue.',
                                 'We will be providing a shuttle to and from the venue for those who prefer not to walk.',
-                                'Discount for the Slatus LaMori wedding.',
+                                'Discount for the Slatus LaMori wedding: use code "SSGSGSN".',
                             ]}
                             logo={<TownplaceSuitesLogo />}
                         />
