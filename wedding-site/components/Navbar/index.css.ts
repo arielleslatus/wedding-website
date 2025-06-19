@@ -7,9 +7,10 @@ export const navBarBase = style({
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingLeft: '24px',
-    backgroundColor: '#350303',
+    backgroundColor: '#822b2c',
     width: '100%',
     height: '60px',
+    zIndex: 9999,
     '@media': {
         ['screen and (min-width: 1000px)']: {
             justifyContent: 'center',
@@ -83,6 +84,11 @@ export const navBarItem = style([
     },
 ]);
 
+export const boldItem = style([
+    navBarItem,
+    { fontWeight: 500, letterSpacing: '1.5px' },
+]);
+
 const currentNavItem = style({
     textDecoration: 'underline',
     textUnderlineOffset: '6px',
@@ -95,6 +101,14 @@ export const navDrawerItem = style([
     navItemBase,
     {
         color: '#350303',
+    },
+]);
+
+export const navDrawerItemBold = style([
+    navDrawerItem,
+    {
+        fontWeight: 500,
+        letterSpacing: '1.5px',
     },
 ]);
 

@@ -1,15 +1,13 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 
-
 const withVanillaExtract = createVanillaExtractPlugin();
-
 
 const nextConfig: NextConfig = {
     images: {
         disableStaticImages: true,
-        formats: ["image/avif"],
+        formats: ['image/avif'],
         remotePatterns: [
             {
                 protocol: 'https',
@@ -19,16 +17,33 @@ const nextConfig: NextConfig = {
                 search: '',
             },
         ],
-      },
-    async rewrites() {
-    return [
+    },
+    async redirects() {
+        return [
             {
-                source: "/insights/:path*/",
-                destination: "https://https://www.slatus-lamori-wedding.com/_vercel/insights/:path*/",
+                source: '/registry',
+                destination:
+                    'https://www.zola.com/registry/arielleandnicolas/edit',
+                permanent: true,
+            },
+            {
+                source: '/rsvp',
+                destination:
+                    'https://www.zola.com/wedding/arielleandnicolas/rsvp',
+                permanent: true,
             },
         ];
     },
-      webpack: (config) => {
+    async rewrites() {
+        return [
+            {
+                source: '/insights/:path*/',
+                destination:
+                    'https://https://www.slatus-lamori-wedding.com/_vercel/insights/:path*/',
+            },
+        ];
+    },
+    webpack: (config) => {
         config.module.rules.push({
             test: /\.(png|jpe?g|gif|svg)$/i,
             loader: 'file-loader',
@@ -37,7 +52,7 @@ const nextConfig: NextConfig = {
                 publicPath: '/assets/',
             },
         });
-        
+
         return config;
     },
 };

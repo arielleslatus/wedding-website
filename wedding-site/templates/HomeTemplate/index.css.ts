@@ -46,6 +46,7 @@ export const infoSection = style({
     justifyContent: 'space-evenly',
     gap: '24px',
     height: '400px',
+    zIndex: 0,
     '@media': {
         ['screen and (min-width: 600px)']: {
             height: '500px',
@@ -57,7 +58,7 @@ export const scriptedStyle = style({
     fontFamily: 'Snell Roundhand',
     fontSize: '2.5rem',
     fontWeight: 600,
-    color: '#350303',
+    color: '#312b24',
     textAlign: 'center',
     zIndex: 9999,
     '@media': {

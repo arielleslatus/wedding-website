@@ -14,13 +14,15 @@ import {
     flowerImageStyle,
     linksHolder,
     registryIconHolder,
+    boldItem,
+    navDrawerItemBold,
 } from './index.css';
 import useScreenSize from '../../hooks/useScreenSize';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ExternalLink } from '../Icons/ExternalLink';
 import { imageBlobUrlBase } from '../../../utils/linkUtils';
-import Image from 'next/image'
+import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
     const pathname = usePathname();
@@ -90,16 +92,6 @@ export const Navbar: React.FC = () => {
                     Gallery
                 </Link>
                 <Link
-                    href="/things-to-do"
-                    className={
-                        pathname === '/things-to-do'
-                            ? currentNavBarItem
-                            : navBarItem
-                    }
-                >
-                    Things to Do in NYC
-                </Link>
-                <Link
                     href="/faqs"
                     className={
                         pathname === '/faqs' ? currentNavBarItem : navBarItem
@@ -116,6 +108,17 @@ export const Navbar: React.FC = () => {
                     Registry
                     <div className={registryIconHolder}>
                         <ExternalLink color="#FFFFFF" />
+                    </div>
+                </a>
+                <a
+                    href="https://www.zola.com/wedding/arielleandnicolas/rsvp"
+                    className={boldItem}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    RSVP
+                    <div className={registryIconHolder}>
+                        <ExternalLink color="#FFFFFF" strokeWidth={1.5} />
                     </div>
                 </a>
             </div>
@@ -165,16 +168,6 @@ export const Navbar: React.FC = () => {
                         Gallery
                     </Link>
                     <Link
-                        href="/things-to-do"
-                        className={
-                            pathname === '/things-to-do'
-                                ? currentNavDrawerItem
-                                : navDrawerItem
-                        }
-                    >
-                        Things to Do in NYC
-                    </Link>
-                    <Link
                         href="/faqs"
                         className={
                             pathname === '/faqs'
@@ -193,13 +186,26 @@ export const Navbar: React.FC = () => {
                             <ExternalLink color="#000000" />
                         </div>
                     </a>
+                    <a
+                        href="https://www.zola.com/wedding/arielleandnicolas/rsvp"
+                        className={navDrawerItemBold}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        RSVP
+                        <div className={registryIconHolder}>
+                            <ExternalLink color="#350303" strokeWidth={1.5} />
+                        </div>
+                    </a>
                 </div>
                 <Image
                     width={0}
                     height={0}
                     sizes="100vw"
                     src={`${imageBlobUrlBase}/tigerlily.png`}
-                    className={flowerImageStyle} alt={''}                />
+                    className={flowerImageStyle}
+                    alt={''}
+                />
             </div>
             <div
                 className={iconHolder}
