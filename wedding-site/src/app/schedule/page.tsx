@@ -1,6 +1,6 @@
 import React from 'react';
-import { ComingSoonTemplate } from '../../../templates/ComingSoonTemplate';
+import { ScheduleTemplate } from '../../../templates/ScheduleTemplate';
 
 export default function Schedule() {
-    return <ComingSoonTemplate />;
+    return <ScheduleTemplate />;
 }
